@@ -1,4 +1,5 @@
 FROM java:jre
+# Based on ariya/centos6-teamcity-server 
 
 ENV TEAMCITY_DATA_PATH /data/teamcity
 ENV TEAMCITY_PACKAGE TeamCity-8.1.5.tar.gz
