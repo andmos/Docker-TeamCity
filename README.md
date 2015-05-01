@@ -15,6 +15,7 @@ Start agent:
 		docker build -t andmos/teamcityagent Agent/
 		docker run --link teamcityserver:teamcityserver -e TEAMCITY_SERVER=http://teamcityserver:8111 -it -p 9090:9090 andmos/teamcityagent
 
+> Mono-based agent is in the works.
 
 Based on [ariya/centos6-teamcity-server](https://registry.hub.docker.com/u/ariya/centos6-teamcity-server/), but rewritten for the
 official Java JRE image. 
