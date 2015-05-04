@@ -13,7 +13,7 @@ Navigate to http://localhost:8111 and run through the setup.
 > Another neat trick is to use a [dedicated storage container](https://medium.com/@ramangupta/why-docker-data-containers-are-good-589b3c6c749e):
 
 >		docker create --name teamcitydata -v /data/teamcity -td debian
-> 	docker run --name teamcityserver -p 8111:8111 --volumes-from=teamcitydata -dt andmos/teamcity
+> 		docker run --name teamcityserver -p 8111:8111 --volumes-from=teamcitydata -dt andmos/teamcity
 
 Start agent:
 
